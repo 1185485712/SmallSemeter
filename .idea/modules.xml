@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/small.iml" filepath="$PROJECT_DIR$/.idea/modules/small.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Application/small.Application.iml" filepath="$PROJECT_DIR$/.idea/modules/Application/small.Application.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Application/small.Application.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Application/small.Application.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Application/small.Application.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Application/small.Application.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Application/small.Application.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Application/small.Application.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Camera2-master.iml" filepath="$PROJECT_DIR$/.idea/modules/Camera2-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Camera2-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Camera2-master.app.iml" />
     </modules>
   </component>
 </project>
