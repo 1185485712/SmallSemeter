@@ -10,8 +10,6 @@ Camera App write with API 2
 ganzhnegyu
 chenxing
 zhuangzhilin
-123123
-456456
 
 ## ScreenShot
 
