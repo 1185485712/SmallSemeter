@@ -10,7 +10,7 @@ Camera App write with API 2
 ganzhnegyu
 chenxing
 zhuangzhilin
-123
+123212
 ## ScreenShot
 
 <img width="200" src="./img/intro_1.png"></img>
