@@ -1,6 +1,7 @@
 package com.smewise.camera2.utils;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -133,22 +134,27 @@ public class MediaFunc {
             Log.e(TAG, "uri is null");
             return;
         }
-        try {
-            Intent intent = new Intent(Intent.ACTION_MAIN).setClassName(
-                    "com.android.gallery3d", "com.android.gallery3d.app.GalleryActivity");
-            intent.setAction(Intent.ACTION_VIEW);
-            //intent.setDataAndType(uri,"image/*");
-            intent.setData(mCurrentUri);
-            context.startActivity(intent);
-        } catch (Exception e) {
-            Intent intent = new Intent(Intent.ACTION_VIEW, mCurrentUri);
-            ComponentName componentName = intent.resolveActivity(context.getPackageManager());
-            if (componentName == null) {
-                Toast.makeText(context, R.string.open_file_error, Toast.LENGTH_LONG).show();
-                return;
-            }
-            context.startActivity(intent);
-        }
+        Intent intent=new Intent(Intent.ACTION_VIEW);
+        intent.setType("image/*");
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
+//        try {
+//            Intent intent = new Intent(Intent.ACTION_MAIN).setClassName(
+//                    "com.android.gallery3d", "com.android.gallery3d.app.GalleryActivity");
+//            intent.setAction(Intent.ACTION_VIEW);
+//            intent.setDataAndType(mCurrentUri,"image/*");
+//            intent.setData(mCurrentUri);
+//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//            context.startActivity(intent);
+//        } catch (Exception e) {
+//            Intent intent = new Intent(Intent.ACTION_VIEW, mCurrentUri);
+//            ComponentName componentName = intent.resolveActivity(context.getPackageManager());
+//            if (componentName == null) {
+//                Toast.makeText(context, R.string.open_file_error, Toast.LENGTH_LONG).show();
+//                return;
+//            }
+//            context.startActivity(intent);
+//        }
     }
 
 }
